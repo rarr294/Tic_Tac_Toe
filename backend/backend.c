@@ -14,7 +14,7 @@
 void winDetect(int Client1,int Client2,char winControl){
    char sendToLost[3] = {11,data[0],data[1]};
    if(winControl == 0){
-      send(Client1,&win_code[0],1,0);
+      send(Client1,win_code,1,0);
       send(Client2,sendToLost,3,0);
       return;
    }
