@@ -37,28 +37,28 @@ void Gameplay(int sockfd){
     if(server_code[0] == 10){
        system("clear");
        printf("%s\n",column);
-       printf("Selamat Anda Menang !\nSedang Membersihkan Room...\n");
+       printf("Congratulations You Win !\nClearing The Room...\n");
        sleep(3);
        return;
     }else if(server_code[0] == 11){
       column[mid_idx[server_code[1]]] = server_code[2];
       system("clear");
       printf("%s\n",column);
-      printf("Anda Kalah !\nSedang Membersihkan Room...\n");
+      printf("Opps You Lost !\nClearing The Room...\n");
       sleep(3);
       return;
     }else if(server_code[0] == 12){
       if(server_code[1] == 1){
          system("clear");
          printf("%s\n",column);
-         printf("Pertandingan Seri !\nSedang Membersihkan Room...\n");
+         printf("game is draw !\nClearing The Room...\n");
          sleep(3);
          return;
       }
       column[mid_idx[server_code[2]]] = server_code[3];
       system("clear");
       printf("%s\n",column);
-      printf("Pertandingan Seri !\nSedang Membersihkan Room...\n");
+      printf("game is draw !\nClearing The Room...\n");
       sleep(3);
       return;
     }
@@ -92,9 +92,9 @@ void startProg(){
   char menu;
   while(1){
     init();
-    printf("(1). Mulai Permainan\n");
-    printf("(2). Keluar\n");
-    printf("Pilih Menu = ");
+    printf("(1). Start Game\n");
+    printf("(2). Exit\n");
+    printf("Choose Menu = ");
     scanf(" %c",&menu);
     if(menu == '2'){
       exit(1);
