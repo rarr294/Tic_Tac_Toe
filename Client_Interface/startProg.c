@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "/home/rar294/Documents/back/netResource.h"
+#include "/Tic_Tac_Toe/backend/netResource.h"
 #include "clientResource.h"
 #include <arpa/inet.h>
 
